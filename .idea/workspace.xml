@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev">
+    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added rare items logic - yls_dev">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,22 +23,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2uiqMnRUivyNrBIJBKSK5Bz4JwW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.App.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.App.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="App" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BasicTextBasedAdventure" />
@@ -131,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742748138631</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added rare items logic - yls_dev">
+      <option name="closed" value="true" />
+      <created>1742748351515</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742748351515</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +161,7 @@
     <MESSAGE value="Setup player stats, player_hp(life), player_attk (attack Power), player_armor(player over health)  - yls_dev" />
     <MESSAGE value="Added dice (d21), setup search object , and search function - yls_dev" />
     <MESSAGE value="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev" />
+    <MESSAGE value="Added rare items logic - yls_dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added rare items logic - yls_dev" />
   </component>
 </project>
