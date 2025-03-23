@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added dice (d21), setup search object , and search function - yls_dev">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev">
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -124,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742745895347</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev">
+      <option name="closed" value="true" />
+      <created>1742748138631</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742748138631</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +151,7 @@
     <MESSAGE value="Setup basic user actions for the dungeon, Search, Move, Leave, these will be used for basic navigation and actions throughout the level (might add more in future) - yls_dev" />
     <MESSAGE value="Setup player stats, player_hp(life), player_attk (attack Power), player_armor(player over health)  - yls_dev" />
     <MESSAGE value="Added dice (d21), setup search object , and search function - yls_dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added dice (d21), setup search object , and search function - yls_dev" />
+    <MESSAGE value="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev" />
   </component>
 </project>

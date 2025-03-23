@@ -57,6 +57,9 @@ if dungeon_enter == "yes":
 
                 elif search > 16:
                     print(f"{player_character} has found a rare item found...")
+                    item_searched = random.choice(searchable_items_rare)
+                    player_inventory.append(item_searched)
+                    print(f"{item_searched} added to {player_character}s' inventory")
 
                 else:
                     print(f"{player_character} has found nothing...")
