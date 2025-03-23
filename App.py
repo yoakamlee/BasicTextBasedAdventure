@@ -8,12 +8,17 @@ player_character = player_character.title()
 player_hp = 10 # Player health
 player_attk = 1 # Player attack power
 player_armor = 0 # Player over health
+player_inventory = []
 
-# All powerful dice (RNJESUS)
-dice_d21 = random.randint(1, 21)
+# All powerful dice object (RN_JESUS)
+dice_d21 = random.randint(1,21)
+dice_d6 = random.randint(1,6)
+dice_d4 = random.randint(1,4)
 
 # Search object
 search = dice_d21
+searchable_items_common = ["Ring", "Armor Piece", "Wooden Sword", "Hp Potion"]
+searchable_items_rare = ["Lucky Ring", "Knights armor", "Steel Sword", "Greater Hp Potion"]
 
 # Dungeon init
 dungeon = False
@@ -32,7 +37,7 @@ if dungeon_enter == "yes":
     while dungeon:
 
         # Player decision
-        player_action = input("Action- Search, Move, or Leave: ")
+        player_action = input("Action- Search, Move, Inventory, or Leave: ")
         player_action = player_action.capitalize().strip()
 
         # Game state
@@ -43,10 +48,14 @@ if dungeon_enter == "yes":
                 print(f"{player_character} used '{player_action}'")
 
                 # Search functions
-                if 8 <= search < 15:
+                if 6 <= search <= 16:
                     print(f"{player_character} has found an item found")
+                    item_searched = random.choice(searchable_items_common)
+                    player_inventory.append(item_searched)
+                    print(f"{item_searched} added to {player_character}s' inventory")
 
-                elif search >= 15:
+
+                elif search > 16:
                     print(f"{player_character} has found a rare item found...")
 
                 else:
@@ -54,6 +63,15 @@ if dungeon_enter == "yes":
 
             case "Move":
                 print(f"{player_character} used '{player_action}'")
+
+            case "Inventory":
+                if len(player_inventory) == 0:
+                    print(f"{player_character}s' inventory is empty")
+
+                else:
+                    print(f"{player_character}s' inventory")
+                    for item in player_inventory:
+                        print(item)
 
             case "Leave":
                 print(f"{player_character} used '{player_action}'")

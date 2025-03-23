@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Setup player stats, player_hp(life), player_attk (attack Power), player_armor(player over health)  - yls_dev">
+    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added dice (d21), setup search object , and search function - yls_dev">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
     </list>
@@ -116,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742744813796</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added dice (d21), setup search object , and search function - yls_dev">
+      <option name="closed" value="true" />
+      <created>1742745895347</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1742745895347</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +143,7 @@
     <MESSAGE value="Setup start of level (dungeon_enter) the dungeon remains open until dungeon remains true - yls_dev" />
     <MESSAGE value="Setup basic user actions for the dungeon, Search, Move, Leave, these will be used for basic navigation and actions throughout the level (might add more in future) - yls_dev" />
     <MESSAGE value="Setup player stats, player_hp(life), player_attk (attack Power), player_armor(player over health)  - yls_dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setup player stats, player_hp(life), player_attk (attack Power), player_armor(player over health)  - yls_dev" />
+    <MESSAGE value="Added dice (d21), setup search object , and search function - yls_dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added dice (d21), setup search object , and search function - yls_dev" />
   </component>
 </project>
