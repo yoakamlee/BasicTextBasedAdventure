@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added rare items logic - yls_dev">
+    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
     </list>
@@ -140,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742748351515</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev">
+      <option name="closed" value="true" />
+      <created>1742758519687</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742758519687</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +170,7 @@
     <MESSAGE value="Added dice (d21), setup search object , and search function - yls_dev" />
     <MESSAGE value="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev" />
     <MESSAGE value="Added rare items logic - yls_dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added rare items logic - yls_dev" />
+    <MESSAGE value="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev" />
   </component>
 </project>

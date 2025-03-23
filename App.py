@@ -6,19 +6,17 @@ player_character = player_character.title()
 
 # Player Stats
 class PlayerStats:
-    player_hp = 10 # Player healths
-    player_attk = 1 # Player attack power
-    player_armor = 0 # Player over health
+    player_hp = 10 # Player healths.
+    player_attk = 1 # Player attack power.
+    player_armor = 0 # Player over health.
     player_inventory = []
-
-
 
 # Search object
 searchable_items_common = ["Ring", "Armor Piece", "Wooden Sword", "Hp Potion"]
 searchable_items_rare = ["Lucky Ring", "Knights armor", "Steel Sword", "Greater Hp Potion"]
 
 # Item object
-
+# TODO: Create Item object.
 
 # Dungeon init
 dungeon = False
@@ -37,6 +35,7 @@ if dungeon_enter == "yes":
     while dungeon:
 
         # All powerful dice object (RN_JESUS)
+        # TODO: Turn Dice class into function.
         class Dice:
             dice_d21 = random.randint(1, 21)
             dice_d6 = random.randint(1, 6)
@@ -46,7 +45,7 @@ if dungeon_enter == "yes":
         player_action = input("Action- Search, Move, Inventory, Stats, or Leave: ")
         player_action = player_action.capitalize().strip()
 
-        search = Dice.dice_d21
+        search = Dice.dice_d21 # Chance of obtaining item.
 
         # Game state
         match player_action:
@@ -84,8 +83,9 @@ if dungeon_enter == "yes":
 
                 else:
                     print(f"{player_character}s' inventory")
-                    for item in PlayerStats.player_inventory:
-                        print(item)
+                    for index, item in enumerate(PlayerStats.player_inventory):
+                        index = index + 1
+                        print(f"{index}: {item}")
 
             # Check player stats function
             case "Stats" | "St":
