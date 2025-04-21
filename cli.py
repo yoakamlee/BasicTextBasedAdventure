@@ -42,6 +42,7 @@ if dungeon_enter == "yes":
 
                 item_searched = Item.get_find_items(search_item)
 
+                # TODO: Only allow new items
                 if item_searched == "Nothing":
                     continue
                 else:
