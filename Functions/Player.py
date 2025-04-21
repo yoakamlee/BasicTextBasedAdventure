@@ -18,5 +18,7 @@ class PlayerStats:
     player_armor = player_data["player_armor"] # Player over health.
     player_inventory = player_data["player_inventory"]
 
+# TODO: Adding to player inventory
+
 if __name__ == "__main__":
     print(player_data)
