@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev">
+    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added + 1 to index so that it starts to display from 1. - yls_dev">
+      <change afterPath="$PROJECT_DIR$/DataFiles/Items_common.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataFiles/Items_rare.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataFiles/player_inventory" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/Dice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/Items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +37,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.App.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.App.executor": "Run",
+    "Python.cli (1).executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "last_opened_file_path": "D:/PythonProject/BasicTextBasedAdventure/Functions/Items.py"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="App" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="Python.cli (1)">
+    <configuration name="cli (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BasicTextBasedAdventure" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -53,7 +60,29 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/App.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cli.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cli" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BasicTextBasedAdventure" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\PythonProject\BasicTextBasedAdventure\cli.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -64,7 +93,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.App" />
+        <item itemvalue="Python.cli (1)" />
+        <item itemvalue="Python.cli" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742758519687</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added + 1 to index so that it starts to display from 1. - yls_dev">
+      <option name="closed" value="true" />
+      <created>1742761217349</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742761217349</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +209,7 @@
     <MESSAGE value="Added two more dice, d6 and d4. Player inventory (player_inventory) and item pool when searching, common and rare (searchable_item_common, searchable_item_rare). Added new case to check players current inventory. Small adjustment to the chance to get a common item. - yls_dev" />
     <MESSAGE value="Added rare items logic - yls_dev" />
     <MESSAGE value="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev" />
+    <MESSAGE value="Added + 1 to index so that it starts to display from 1. - yls_dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added + 1 to index so that it starts to display from 1. - yls_dev" />
   </component>
 </project>
