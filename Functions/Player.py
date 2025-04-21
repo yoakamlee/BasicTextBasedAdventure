@@ -1,5 +1,6 @@
 import json
 
+
 # Player Stats
 FILEPATH_Test = "../DataFiles/player_stats.json"
 FILEPATH = "DataFiles/player_stats.json"
