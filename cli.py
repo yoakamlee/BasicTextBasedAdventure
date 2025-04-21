@@ -1,14 +1,6 @@
 import Functions.Items as Item
 import Functions.Dice as Dice
-
-
-# Player Stats
-# TODO: Create function for player stats and storing player inventory.
-class PlayerStats:
-    player_hp = 10 # Player healths.
-    player_attk = 1 # Player attack power.
-    player_armor = 0 # Player over health.
-    player_inventory = []
+import Functions.Player as Stats
 
 
 # Item object
@@ -50,7 +42,10 @@ if dungeon_enter == "yes":
 
                 item_searched = Item.get_find_items(search_item)
 
-                PlayerStats.player_inventory.append(item_searched)
+                if item_searched == "Nothing":
+                    continue
+                else:
+                    Stats.PlayerStats.player_inventory.append(item_searched)
 
                 print(f"{item_searched} added to {player_character}s' inventory")
 
@@ -62,21 +57,21 @@ if dungeon_enter == "yes":
             case "Inventory" | "I":
                 print(f"{player_character} used '{player_action}'")
 
-                if len(PlayerStats.player_inventory) == 0:
+                if len(Stats.PlayerStats.player_inventory) == 0:
                     print(f"{player_character}s' inventory is empty")
 
                 else:
                     print(f"{player_character}s' inventory")
-                    for index, item in enumerate(PlayerStats.player_inventory):
+                    for index, item in enumerate(Stats.PlayerStats.player_inventory):
                         index = index + 1
                         print(f"{index}: {item}")
 
             # Check player stats function
             case "Stats" | "St":
                 print(f"{player_character} used '{player_action}'")
-                print(f"{player_character}s' HP: {PlayerStats.player_hp}")
-                print(f"{player_character}s' ARMOR: {PlayerStats.player_armor}")
-                print(f"{player_character}s' ATTK: {PlayerStats.player_attk}")
+                print(f"{player_character}s' HP: {Stats.PlayerStats.player_hp}")
+                print(f"{player_character}s' ARMOR: {Stats.PlayerStats.player_armor}")
+                print(f"{player_character}s' ATTK: {Stats.PlayerStats.player_attk}")
 
             case "Leave" | "L":
                 print(f"{player_character} used '{player_action}'")

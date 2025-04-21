@@ -1,23 +1,30 @@
 import random
-
-FILEPATH_Common = "DataFiles/Items_common.txt"
-FILEPATH_rare = "DataFiles/Items_rare.txt"
+import json
 
 
-def get_find_items(search_arg, filepath_common=FILEPATH_Common, filepath_rare=FILEPATH_rare):
+FILEPATH = "DataFiles/items.json"
+
+with open(FILEPATH, "r") as file:
+    item_context = file.read()
+
+data = json.loads(item_context)
+
+common_item = data[0]
+rare_item = data[1]
+
+def get_find_items(search_arg):
     if 5 <= search_arg <= 16:
-        with open(filepath_common, "r") as local_file:
-            data = local_file.readlines()
-            data = [local_item.strip("\n") for local_item in data]
-            local_item_searched = random.choice(data)
-            return local_item_searched
+        local_item_searched = random.choice(common_item["items"])
+        return local_item_searched
 
     elif search_arg > 16:
-        with open(filepath_rare, "r") as local_file:
-            data = local_file.readlines()
-            data = [local_item.strip("\n") for local_item in data]
-            local_item_searched = random.choice(data)
-            return local_item_searched
+        local_item_searched = random.choice(rare_item["items"])
+        return local_item_searched
 
     else:
         print(f"You have found nothing...")
+        return "Nothing"
+
+if __name__ == "__main__":
+    print(common_item)
+    print(rare_item)

@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Added + 1 to index so that it starts to display from 1. - yls_dev">
-      <change afterPath="$PROJECT_DIR$/DataFiles/Items_common.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataFiles/Items_rare.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataFiles/player_inventory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Functions/Dice.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Functions/Items.py" afterDir="false" />
+    <list default="true" id="fdf7da3a-8dc3-4404-a838-9269ad3e2574" name="Changes" comment="Turned Searching for items and rolling dice into functions and separated them into their own modules.&#10;Using text files to store common and rare items respectively - yls_dev">
+      <change afterPath="$PROJECT_DIR$/DataFiles/items.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataFiles/player_stats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Functions/Player.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataFiles/Items_common.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataFiles/Items_rare.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Items.py" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/cli.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,13 +41,65 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.App.executor": "Run",
+    "Python.Items.executor": "Run",
+    "Python.Player.executor": "Run",
     "Python.cli (1).executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "last_opened_file_path": "D:/PythonProject/BasicTextBasedAdventure/Functions/Items.py"
+    "last_opened_file_path": "D:/PythonProject/BasicTextBasedAdventure/Functions/Items.py",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Python"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.cli (1)">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PythonProject\BasicTextBasedAdventure\Functions" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Items">
+    <configuration name="Items" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BasicTextBasedAdventure" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/Items.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Player" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="BasicTextBasedAdventure" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Functions/Player.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="cli (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="BasicTextBasedAdventure" />
       <option name="ENV_FILES" value="" />
@@ -93,7 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Items" />
         <item itemvalue="Python.cli (1)" />
+        <item itemvalue="Python.Player" />
         <item itemvalue="Python.cli" />
       </list>
     </recent_temporary>
@@ -186,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742761217349</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Turned Searching for items and rolling dice into functions and separated them into their own modules.&#10;Using text files to store common and rare items respectively - yls_dev">
+      <option name="closed" value="true" />
+      <created>1745252906488</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745252906488</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +273,7 @@
     <MESSAGE value="Added rare items logic - yls_dev" />
     <MESSAGE value="Created classes for PlayerStats and Dice, had to move dice into the while loop for proper random generation(TODO: Turn dice into a function), player can now view their player stats. Adjusted the chance for finding common items again. Added shortcut keys for the match-case. - yls_dev" />
     <MESSAGE value="Added + 1 to index so that it starts to display from 1. - yls_dev" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added + 1 to index so that it starts to display from 1. - yls_dev" />
+    <MESSAGE value="Turned Searching for items and rolling dice into functions and separated them into their own modules.&#10;Using text files to store common and rare items respectively - yls_dev" />
+    <option name="LAST_COMMIT_MESSAGE" value="Turned Searching for items and rolling dice into functions and separated them into their own modules.&#10;Using text files to store common and rare items respectively - yls_dev" />
   </component>
 </project>
